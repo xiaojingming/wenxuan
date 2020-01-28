@@ -1,7 +1,7 @@
 <template>
   <main>
     <router-view/>
-    <van-tabbar v-model="active" route>
+    <van-tabbar v-model="active" route active-color="#f41e33">
       <van-tabbar-item icon="wap-home-o" to="/home">首页</van-tabbar-item>
       <van-tabbar-item icon="search" to="/discover">分类搜索</van-tabbar-item>
       <van-tabbar-item icon="shopping-cart-o" to="/cart">购物车</van-tabbar-item>
@@ -11,12 +11,8 @@
 </template>
 
 <script>
-import { Tabbar, TabbarItem } from "vant";
-import "vant/lib/tabbar/style";
-import "vant/lib/tabbar-item/style";
-import Vue from "vue";
-Vue.use(Tabbar);
-Vue.use(TabbarItem);
+import './js/rem.js';
+
 
 export default {
   name: "app",
